@@ -1,1 +1,121 @@
-//
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+body {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f3f6;
+
+    a {
+
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    header {
+
+        display: flex;
+        justify-content: space-between;
+
+        padding: 4em 0;
+
+        button {
+
+            padding: .7em 1.5em;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            background-color: Dodgerblue;
+        }
+    }
+
+    .container {
+
+        width: 60%;
+        margin: 0 auto;
+
+        .employee {
+
+            margin-bottom: 2em;
+
+            .emp-info {
+
+                margin-bottom: 1em;
+
+                h3 {
+
+                    font-size: 30px;
+                    color: Dodgerblue;
+                }
+
+                p {
+
+                    font-size: 13px;
+
+                    span {
+
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .tasks {
+
+                .task-info {
+
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0.7em 0 .3em;
+                    border-bottom: .5px solid lightgrey;
+                
+                    &:not(:last-child) {
+    
+                        margin-bottom: .5em;
+                    }
+    
+                    &:hover {
+    
+                        background-color: rgba($color: lightgrey, $alpha: .2);
+                    }
+
+                    p {
+    
+                        span {
+    
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            margin-right: 1.5em;
+    
+                            font-size: 12px;
+                            color: white;
+                            text-align: center;
+                            line-height: 20px;
+                            border-radius: 3px;
+                            background-color: Turquoise;
+                        }
+                    }
+
+                    .opt {
+
+                        font-size: 14px;
+                        color: dodgerblue;
+
+                        a {
+
+                            &:last-child {
+    
+                                margin-left: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
